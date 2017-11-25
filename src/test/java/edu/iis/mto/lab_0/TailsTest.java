@@ -34,6 +34,11 @@ public class TailsTest {
     }
 
     @Test
+    public void tailsShouldReturnThreeSizedStringAsFourthElement() {
+        assertThat(tails.get(2), Matchers.equalTo("llo"));
+    }
+
+    @Test
     public void tailsShouldReturnEmptyStringAsLastElement() {
 
         assertThat(tails.get(tails.size() - 1), Matchers.equalTo(""));
